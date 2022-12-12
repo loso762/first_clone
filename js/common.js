@@ -10,7 +10,7 @@ function head(){
     const bg1 = document.querySelector ('.bg1');
     const btnesc = document.querySelector ('.esc');
     
-    $('.open_menu').click(function(){
+    $('.open_menu').on('click',function(){
         $('.open_menu > span').css({'transform':'translateX(100px)'});
         $('.menu > .contents').toggleClass('animate__fadeInDownBig');
     
@@ -35,8 +35,8 @@ function head(){
         $('.esc > span').eq(1).css({'transform':'translateY(0) rotate(-45deg) translateX(70px)'});   
     
         setTimeout(function(){
-        menu.style = 'transform: translateY(-100%)';
-        bg1.style = 'opacity: 0';
+            menu.style = 'transform: translateY(-100%)';
+            bg1.style = 'opacity: 0';
         },400)
                     
         setTimeout(function(){
@@ -86,7 +86,7 @@ function head(){
             fill:"forwards",
             easing:"ease"
         });       
-             
+
         con.childNodes[1].animate([
         { transform: 'scale(1)'},
         { transform: 'scale(0)'}
@@ -100,21 +100,13 @@ function head(){
         },300);
     })
     
-    const logoSpan = document.querySelector('.logoP').innerHTML;
+    const logoSpan = $('.logoP').html();
     let logoO = '';
     
     for(let i=0;i<logoSpan.length;i++){
         logoO +=`<span>${logoSpan[i]}</span>`;
     }
     $('.logoP').html(logoO);
-    
-    const logoSpan2 = document.querySelectorAll('.logoP > span');
-    
-    logoSpan2.forEach(function(logo,key){
-        setTimeout(function(){
-            logo.style.cssText = "animation-name : logoSpan";
-        },80*[key])
-    })
 
     $('.logoP > span').each(function(key,logo){
         setTimeout(function(){

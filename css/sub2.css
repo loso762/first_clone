@@ -237,8 +237,7 @@ main div.tab_menu .cont_area div:nth-of-type(3) > .conacc {
   padding-top: 35px;
 }
 .picpop .con {
-  opacity: 1;
-  transition: 2s;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,8 +249,7 @@ main div.tab_menu .cont_area div:nth-of-type(3) > .conacc {
   width: 45px;
   height: 45px;
   cursor: pointer;
-  opacity: 1;
-  transition: 1s;
+  opacity: 0;
   margin: 50px 0;
   opacity: 0.6;
 }
@@ -273,7 +271,6 @@ main div.tab_menu .cont_area div:nth-of-type(3) > .conacc {
   width: 26px;
   height: 40px;
   cursor: pointer;
-  transition: 1s;
   margin: 15px 0;
   opacity: 0.6;
   position: absolute;
@@ -288,7 +285,6 @@ main div.tab_menu .cont_area div:nth-of-type(3) > .conacc {
   height: 40px;
   cursor: pointer;
   opacity: 1;
-  transition: 1s;
   margin: 15px 0;
   opacity: 0.6;
   position: absolute;

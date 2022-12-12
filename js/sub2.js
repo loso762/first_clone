@@ -10,7 +10,7 @@ for(var k = 0; k < tabList.length; k++){
     }
     this.parentNode.classList.add('is_on');
     activeCont = this.getAttribute('href');
-    document.querySelector(activeCont).style.display = 'flex';
+    $(activeCont).css({'display':'flex'});
     document.querySelector(activeCont).children[1].children[0].style.display = 'flex';
     });
 }
@@ -31,78 +31,57 @@ for(var k = 0; k < tabList.length; k++){
                         pa[r].children[k].style = 'display:none'
                     }
                 }
-
-                this.classList.add('is_on');
-                activeCont = this.getAttribute('href');
-                document.querySelector(activeCont).style = 'display:flex';
+                $(this).addClass('is_on');
+                activeCont = $(this).attr('href');
+                $(activeCont).css({'display':'flex'});
             });
         }
     }
 
-    const picpop = document.querySelector('.picpop');
     const pic = document.querySelectorAll('.panel > li');
-    const picu = document.querySelectorAll('.panel > li > img');
-    const popdown2 = document.querySelector('.picexit');
-    const imgwrap = document.querySelector('.picpop > .con > .wrap > img');
+    const imgwrap = document.querySelector('.pic');
     const imgex = document.querySelector('.picpop > .con > .ex');
-    const picnextbtn = document.querySelector('.picnext');
-    const picprevtbtn = document.querySelector('.picprev');
     let num; 
 
     pic.forEach(function(li,key){
         li.addEventListener('click',function(){  
-            imgwrap.setAttribute('src', pic[key].children[0].src);   
-            imgex.innerHTML = pic[key].children[1].innerHTML;
-            picpop.classList.toggle("is_off");
-            picpop.childNodes[1].animate(
-                [
-                    { opacity:'0'},{ opacity:'1'}
-                ],
-                {
-                    duration : 700,
-                    delay:0,
-                    fill:"forwards",
-                    easing:"ease"
-                }
-            );
-            picpop.childNodes[1].childNodes[1].animate([
-            { opacity:'0'},
-            { opacity:'1'}
-            ],{
-                duration : 200,
-                delay: 250,
-                fill:"forwards"
-            }); 
+            $('.pic').attr('src', pic[key].children[0].src);   
+            $('.picpop > .con > .ex').html(pic[key].children[1].innerHTML);
+            $('.picpop').toggleClass("is_off");
+
+            $('.con').animate({
+                opacity:'1'
+            },300);    
+            
+            $('.picexit').animate({
+                opacity:'1'
+            },300);
+            
             num = Number([key]);
         })
     })
-    popdown2.addEventListener('click',function(){
-        picpop.childNodes[1].animate([
-        { opacity:'1'},
-        { opacity:'0'}
-        ],{
-            duration : 300,
-            fill:"forwards",
-            easing:"ease"
-        });            
-        picpop.childNodes[1].childNodes[1].animate([
-        {opacity:'1'},
-        {opacity:'0'}
-        ],{
-            duration : 300,
-            fill:"forwards"
-        });
-     
+
+    $('.picexit').on('click',function(){
+        $('.con').animate({
+            opacity:'0'
+        },400);    
+
+        $('.picexit').animate({
+            opacity:'0'
+        },400);
+
         setTimeout(function() {
-            picpop.classList.toggle("is_off");
-        }, 200);
+            $('.picpop').toggleClass("is_off");
+        },400);
     })
-    picnextbtn.addEventListener('click',function(){            
+
+    $('.picnext').on('click',function(){            
         num+=1;
         imgwrap.setAttribute('src', pic[num].children[0].src)
         imgex.innerHTML =  pic[num].children[1].innerHTML;                   
     }); 
-    picprevtbtn.addEventListener('click',function(){         
+
+    $('.picprev').on('click',function(){          
         num-=1;        
         if(num>=1){
             imgwrap.setAttribute('src', pic[num].children[0].src)
