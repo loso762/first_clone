@@ -697,17 +697,12 @@ $min : 280px;
     
     
         ul{
-            width: 190px;
+            width: 180px;
             height: 70px;
             transform: scale(0.7) translateX(20px);    
         
             li{
                 padding: 15px 0;
-                display: flex;
-                justify-content: center;
-                height: 100%;
-                width: 33.3%;
-                transition: 1s;      
                 padding-left: 5px;
         
                 a,button, .jojo{

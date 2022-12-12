@@ -1044,7 +1044,7 @@ div.swiper div.swiper-wrapper div.s2 div.ex1 div.content1 {
         width: 280px;
     }
 }
-
+a
 .is_off{
     display: none;
 }
@@ -1053,15 +1053,17 @@ header{
   padding: 0 30px 0 0;
 
   h1#logo{
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
 
   ul{
-      width: 150px;
+    width: 180px;
+    height: 70px;
+    transform: scale(0.7) translateX(20px);    
 
       li{
-        transform: scale(0.7);
-        padding: 16px 0;
+        padding: 15px 0;
+        padding-left: 5px;
       }
       
       .open_menu{
