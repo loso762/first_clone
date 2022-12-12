@@ -684,7 +684,7 @@ div.swiper div.swiper-scrollbar div.swiper-scrollbar-drag {
   font-size: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   header {
     padding: 0 10px;
   }
@@ -914,7 +914,7 @@ div.swiper div.swiper-scrollbar div.swiper-scrollbar-drag {
     left: -130%;
   }
 }
-@media screen and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
   .pop .con img {
     width: 30px;
     height: 30px;
@@ -941,10 +941,11 @@ div.swiper div.swiper-scrollbar div.swiper-scrollbar-drag {
     display: none;
   }
   header {
-    padding: 0 30px 0 0;
+    padding: 0;
   }
   header h1#logo {
-    transform: scale(0.8);
+    transform: scale(0.7);
+    width: 108px;
   }
   header ul {
     width: 180px;
