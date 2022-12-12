@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>위치안내</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="bg1"></div>
+        <div class="contents animate__animated animate__slow">
+            <button href="./index.html" class="esc">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="menu">
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub.html">Story</a>
+                    </div>       
+                    <span>온실 이야기</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub2.html">Archive</a>
+                    </div>       
+                    <span>온실 아카이브</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub3.html">Guide</a>
+                        <a class="h3" id="use" href="./sub3.html">이용안내</a>
+                        <a class="h3" href="./map.html">위치안내</a>
+                    </div>             
+                    <span>온실 가이드</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub4.html">Care Program</a>
+                        <a class="h3" href="./sub4.html">사진 온도</a>
+                    </div>
+                    <span>케어프로그램</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./reserv.html">Reservation</a>
+                    </div>
+                    <span>예약하기</span>
+                </div>
+            </div>            
+            <div class="foot">
+                <div class="search">
+                    <input type="text" class="searchText" placeholder="SEARCH">
+                    <a href="#">
+                        <button class="searchButton">
+                            <img src="./img/btn_search.png">
+                        </button>
+                    </a>
+                </div> 
+                <div class="backlogo">
+                    <img src="./img/ci.png" alt="">
+                </div>    
+            </div> 
+        </div>
+    </section>
+
+    <div class="pop is_off">
+        <div class="con">
+            <img class="jojoexit" src="./img/ico_close_pop02.png">
+            <div class="wrap">
+                <img src="./img/ico_window.png">
+                <input type="text" class="t1" placeholder="아이디">
+                <input type="text" class="t1" placeholder="비밀번호">
+                <button>
+                    <p>LOGIN</p>
+                    <div class="bb"></div>
+                </button>
+                <p class="join">회원가입</p>
+            </div>
+            
+            <div class="pop2">
+                <label><input class="check" type="checkbox">로그인 상태 유지</label>
+                <div class="idp">
+                    <p>아이디/비밀번호 찾기</p>
+                    <p>비회원 예약조회</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <p class="logoP">LOCATION</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8910828687626!2d127.01755051556768!3d37.51048693509323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9942ee35abff%3A0x4c6d18d3b3d023a9!2z7IKs7KeE7Jio7Iuk!5e0!3m2!1sko!2skr!4v1669293786369!5m2!1sko!2skr" width="100%" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="animate__animated animate__fadeInUp">
+        </iframe>
+
+        <div class="container animate__animated animate__fadeInUp">
+            <div class="trafficInfo1">
+                <p>
+                    " 7호선 논현역 4번 출구에서 100m "
+                </p>
+                <span class="a1">서울특별시 서초구 사평대로55길 149 3층 YJ빌딩</span>
+                <span class="a2">02-6083-4257</span>
+            </div>
+            <div class="trafficInfo2">
+                    <div class="con1">
+                        <h2 class="ex1">지하철 이용시</h2>
+                        <h2 class="ex2">버스 이용시</h2>
+                        <h2 class="ex3">주차안내 (유료)</h2>
+                    </div>
+                    <div class="con2">
+                        <h3 class="ex1">7호선 논현역 4번출구 보도 100m, 1분 소요</h3>
+                        <h3 class="ex2">
+                            <p>논현사거리.논현역4번 출구 (보도 10m)</p>
+                            <p>간선 버스 : 142, 48, 360, 401, 452, 640<br>지선 버스  : 3414, 44212, 6411, 9408<br>광역 버스 : 9408</p>
+                        </h3>
+                        <h3 class="ex3">
+                            <p>&lt;YJ 빌딩 주차타워&gt; (본 건물, 구주소 : 서초구 반포동 705-2)<br>전폭 5.2m 이상의 대형 세단 및 SUV(소형 SUV 및 박스카) 주차 불가<br>(미니 &amp; 니로 주차 가능, 레이 주차 불가)<br>주차관리실 소장님을 찾아주세요.<br>(소장님 부재 시 사진온실 010-3735-9931로 연락)<br>현금 결제 2,000원 (사진온실 이용 시간 동안 주차 가능)<br>SUV 차량은 아래 유료 주차장을 이용 바랍니다.</p>
+                            <p>&lt;GS타임즈 영동프라자 주차장&gt; (강남대로128길 20 영동프라자)<br>주말 종일권 7,000원 (모두의 주차장 ‘사전’ 어플 예약 필수)<br>주말 SUV 차량 주차 추천</p>
+                            <p>&lt;논현 민영 주차장&gt; (서초구 잠원동 38-24)<br>평일 3시간권 : 10,000원 / 휴일 당일권 : 15,000원<br>(모두의 주차장 ‘사전’ 앱 예약 필수)</p>
+                            <p>&lt;우진빌딩 주차장&gt; (서초구 반포동 706)<br>최초 30분 요금 2,000원, 이후 10분 당 1,000원 (현금 결제)</p>
+                            <p>&lt;XGOLF 골프연습장 주차장&gt; (서초구 강남대로 545-9)<br>최초 30분 3,000원, 이후 10분당 1,100원</p>
+                            <p>애플리케이션 '모두의 주차장'을 통해 <br>공유 및 제휴 주변 유료 주차장 이용 바랍니다</p>
+                        </h3>
+                    </div>                   
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/common.js"></script>
+    
+</body>
+</html>

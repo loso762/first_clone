@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="icon" href="./img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    <title>사진온실</title>
+</head>
+<body>
+    <div class="pop is_off">
+        <div class="con">
+            <img class="jojoexit" src="./img/ico_close_pop02.png">
+            <div class="wrap">
+                <img src="./img/ico_window.png">
+                <input type="text" class="t1" placeholder="아이디">
+                <input type="text" class="t1" placeholder="비밀번호">
+                <button>
+                    <p>LOGIN</p>
+                    <div class="bb"></div>
+                </button>
+                <p class="join">회원가입</p>
+            </div>
+            
+            <div class="pop2">
+                <label><input class="check" type="checkbox">로그인 상태 유지</label>
+                <div class="idp">
+                    <p>아이디/비밀번호 찾기</p>
+                    <p>비회원 예약조회</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="menu">
+        <div class="bg1"></div>
+        <div class="contents animate__animated animate__slow">
+            <button href="./index.html" class="esc">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="menu">
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub.html">Story</a>
+                    </div>       
+                    <span>온실 이야기</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub2.html">Archive</a>
+                    </div>       
+                    <span>온실 아카이브</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub3.html">Guide</a>
+                        <a class="h3" id="use" href="./sub3.html">이용안내</a>
+                        <a class="h3" href="./map.html">위치안내</a>
+                    </div>             
+                    <span>온실 가이드</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./sub4.html">Care Program</a>
+                        <a class="h3" href="./sub4.html">사진 온도</a>
+                    </div>
+                    <span>케어프로그램</span>
+                </div> 
+                <div class="list">
+                    <div class="a">
+                        <a class="h2" href="./reserv.html">Reservation</a>
+                    </div>
+                    <span>예약하기</span>
+                </div>
+            </div>            
+            <div class="foot">
+                <div class="search">
+                    <input type="text" class="searchText" placeholder="SEARCH">
+                    <a href="#">
+                        <button class="searchButton">
+                            <img src="./img/btn_search.png">
+                        </button>
+                    </a>
+                </div> 
+                <div class="backlogo">
+                    <img src="./img/ci.png" alt="">
+                </div>    
+            </div> 
+        </div>
+    </section>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="s1 swiper-slide">
+                <div class="bg1 animate__animated animate__slow animate__fadeInUp"></div>   
+                <div class="ex1 animate__animated animate__slow animate__fadeInDown ">
+                    <div class="content1">
+                        <p class="a1">meet<br> my<br> self</p>
+                        <p class="a2">아빠잘가요<br> 빠이<br> #가족사진촬영</p>
+                    </div>                    
+                    <p class="guideScroll">Scroll Down</p>
+                    <a class="detailView" href="./sub2.html">
+                        <p>DETAIL VIEW</p>
+                        <div class="wb"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="s2 swiper-slide"> 
+                <div class="ex1 animate__animated animate__slow">
+                    <div class="content1">
+                        <p class="a1">half<br> mirror</p>
+                        <p class="a2">個人鏡觀<br> 개인을 경험하는<br> 거울 셀프 사진관</p>
+                    </div>
+                    <p class="guide2">개인경관</p>                    
+                    <a href="./sub.html" class="detailView">
+                        <p>DETAIL VIEW</p>
+                        <div class="wb"></div></a>
+                </div>                   
+                <div class="bg1 animate__animated animate__slow"></div> 
+            </div>
+            <div class="s3 swiper-slide">
+                <div class="bg1 animate__animated animate__slow"></div>   
+                <div class="ex1 animate__animated animate__slow">
+                    <div class="content1">
+                        <p class="a1">LONG LIFE<br>PRODUCTS</p>
+                        <p class="a2">사진을<br> 오래 간직할 수 있는</p>
+                    </div>
+                    
+                    <p class="guide3">ACID FREE 재료</p>
+                    <a href="./sub3.html" class="detailView">
+                        <p>DETAIL VIEW</p>
+                        <div class="wb"></div>
+                    </a>
+                </div> 
+            </div>
+            <div class="s4 swiper-slide">
+                <div class="ex1 animate__animated animate__slow">
+                    <div class="content1">
+                        <p class="a1">GALLERY +<br>BOOK STRORE</p>
+                        <p class="a2">예술 작품이<br>함께하는</p>
+                    </div>
+                    <p class="guide3">셀프 작품론</p>
+                </div> 
+                <div class="bg1 animate__animated animate__slow"></div>      
+            </div>            
+            <div class="s5 swiper-slide">
+                <div class="bg1 animate__animated animate__slow"></div>   
+                <div class="ex1 animate__animated animate__slow">
+                    <div class="content1">
+                        <p class="a1">ONSIL<br>NEWS</p>
+                        <p class="a2">진행중인<br>프로그램 안내</p>
+                    </div>
+                    
+                    <p class="guide3">케어 프로그램</p>
+                    <a href="./sub4.html" class="detailView">
+                        <p>DETAIL VIEW</p>
+                        <div class="wb"></div></a>
+                </div>   
+            </div>
+
+        </div>  
+        <div class="swiper-scrollbar">
+            <div class="swiper-scrollbar-drag"></div>
+        </div>  
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
