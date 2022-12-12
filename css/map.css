@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: 65px 0 100px 0;
+  width: 100%;
+}
+main .logoP {
+  display: block;
+  color: #e0e0e0;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-family: "Libre Bodoni", serif;
+}
+main .logoP span {
+  width: 32px;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  transform: translateY(0%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+main .logoP span:nth-child(2) {
+  margin-right: 2px;
+}
+main .logoP span:nth-child(6) {
+  width: 25px;
+}
+@-webkit-keyframes logoSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  55% {
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes logoSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  55% {
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main div.container {
+  position: relative;
+  max-width: 1120px;
+  height: 855px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+main div.container div.trafficInfo1 {
+  max-width: 420px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main div.container div.trafficInfo1 p {
+  font-size: 26px;
+  color: #c4c4c4;
+  font-family: "Noto Serif KR", serif;
+  margin: 0 0 80px 0;
+}
+main div.container div.trafficInfo1 span {
+  display: block;
+  font-size: 16px;
+  color: black;
+  font-family: "Noto Sans KR", serif;
+  margin-bottom: 40px;
+  padding-left: 35px;
+  position: relative;
+}
+main div.container div.trafficInfo1 .a1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../map/ico_location.png) left center no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 20px;
+}
+main div.container div.trafficInfo1 .a2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../map/ico_tel.png) left center no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 20px;
+}
+main div.container div.trafficInfo2 {
+  max-width: 700px;
+  font-size: 16px;
+  padding-bottom: 40px;
+  color: #333;
+  line-height: 150%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  display: flex;
+}
+main div.container div.trafficInfo2 .con1 {
+  width: 152px;
+}
+main div.container div.trafficInfo2 .con2 {
+  width: 452px;
+}
+main div.container div.trafficInfo2 h2, main div.container div.trafficInfo2 h3 {
+  text-align: left;
+  margin: 10px 20px 0 0;
+}
+main div.container div.trafficInfo2 h2 {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+main div.container div.trafficInfo2 h3 {
+  font-size: 16px;
+  font-weight: 200;
+  margin-right: 0;
+}
+main div.container div.trafficInfo2 h3 p {
+  margin-top: 0;
+}
+main div.container div.trafficInfo2 .ex1 {
+  height: 55px;
+}
+main div.container div.trafficInfo2 .ex2 {
+  height: 140px;
+}
+main div.container div.trafficInfo2 .ex3 {
+  height: 600px;
+}
+main div.container div.trafficInfo2 .ex3 p {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  main div.container {
+    position: relative;
+    max-width: 1120px;
+    height: auto;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main div.container div.trafficInfo1 {
+    width: 100%;
+    max-width: initial;
+    margin: 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main div.container div.trafficInfo1 p {
+    font-size: 26px;
+    color: #c4c4c4;
+    font-family: "Noto Serif KR", serif;
+    margin: 0 0 80px 0;
+  }
+  main div.container div.trafficInfo1 span {
+    display: block;
+    font-size: 16px;
+    color: black;
+    font-family: "Noto Sans KR", serif;
+    margin-bottom: 40px;
+    padding-left: 35px;
+    position: relative;
+  }
+  main div.container div.trafficInfo1 .a1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../map/ico_location.png) left center no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+  }
+  main div.container div.trafficInfo1 .a2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../map/ico_tel.png) left center no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+  }
+  main div.container div.trafficInfo2 {
+    max-width: initial;
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 40px;
+    color: #333;
+    line-height: 150%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  main div.container div.trafficInfo2 .con1 {
+    width: 25%;
+  }
+  main div.container div.trafficInfo2 .con1 h2 {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+    text-align: right;
+  }
+  main div.container div.trafficInfo2 .con2 {
+    width: 60%;
+  }
+  main div.container div.trafficInfo2 h2, main div.container div.trafficInfo2 h3 {
+    text-align: left;
+    margin: 10px 20px 0 0;
+  }
+  main div.container div.trafficInfo2 h3 {
+    font-size: 15px;
+    padding-left: 30px;
+    font-weight: 200;
+    margin-right: 0;
+  }
+  main div.container div.trafficInfo2 h3 p {
+    margin-top: 0;
+  }
+  main div.container div.trafficInfo2 .ex1 {
+    height: 55px;
+  }
+  main div.container div.trafficInfo2 .ex2 {
+    height: 140px;
+  }
+  main div.container div.trafficInfo2 .ex3 {
+    height: 600px;
+  }
+  main div.container div.trafficInfo2 .ex3 p {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 280px) and (max-width: 767px) {
+  main .logoP {
+    display: block;
+    color: #e0e0e0;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-family: "Libre Bodoni", serif;
+  }
+  main .logoP span {
+    width: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    transform: translateY(0%);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main .logoP span:nth-child(6) {
+    width: 12px;
+  }
+  main iframe {
+    height: 250px;
+  }
+  main div.container {
+    position: relative;
+    max-width: 1120px;
+    height: auto;
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main div.container div.trafficInfo1 {
+    width: 100%;
+    max-width: initial;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main div.container div.trafficInfo1 p {
+    font-size: 20px;
+    color: #c4c4c4;
+    font-family: "Noto Serif KR", serif;
+    margin: 0 0 60px 0;
+  }
+  main div.container div.trafficInfo1 span {
+    display: block;
+    font-size: 15px;
+    color: black;
+    font-family: "Noto Sans KR", serif;
+    margin-bottom: 50px;
+    padding-left: initial;
+    position: relative;
+  }
+  main div.container div.trafficInfo1 .a1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -140%;
+    left: 50%;
+    transform: translateX(-8px);
+    background: url(../map/ico_location.png) left center no-repeat;
+    width: 26px;
+    height: 26px;
+    background-size: 16px;
+  }
+  main div.container div.trafficInfo1 .a2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -140%;
+    left: 50%;
+    transform: translateX(-8px);
+    background: url(../map/ico_tel.png) left center no-repeat;
+    width: 26px;
+    height: 26px;
+    background-size: 16px;
+  }
+  main div.container div.trafficInfo2 {
+    max-width: initial;
+    width: 100%;
+    font-size: 15px;
+    padding-bottom: 0;
+    color: #333;
+    line-height: 150%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  main div.container div.trafficInfo2 .con1 {
+    width: 28%;
+  }
+  main div.container div.trafficInfo2 .con1 h2 {
+    font-size: 12px;
+  }
+  main div.container div.trafficInfo2 .con2 {
+    width: 65%;
+    height: auto;
+  }
+  main div.container div.trafficInfo2 h2, main div.container div.trafficInfo2 h3 {
+    text-align: left;
+    margin: 10px 15px 0 0;
+  }
+  main div.container div.trafficInfo2 h2 {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+  }
+  main div.container div.trafficInfo2 h3 {
+    padding-left: 0;
+    font-weight: 200;
+    font-size: 12px;
+    margin-right: 0;
+  }
+  main div.container div.trafficInfo2 h3 p {
+    margin-top: 0;
+  }
+  main div.container div.trafficInfo2 .ex1 {
+    height: auto;
+  }
+  main div.container div.trafficInfo2 .ex2 {
+    height: auto;
+  }
+  main div.container div.trafficInfo2 .ex3 {
+    height: auto;
+  }
+  main div.container div.trafficInfo2 .ex3 p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=map.css.map */

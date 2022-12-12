@@ -1,0 +1,634 @@
+main {
+  margin: 65px 0 100px 0;
+  width: 100%;
+}
+main .logoP {
+  display: block;
+  color: #e0e0e0;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-family: "Libre Bodoni", serif;
+}
+main .logoP span {
+  width: 32px;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  transform: translateY(0%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+main .logoP span:nth-child(1) {
+  margin-right: 5px;
+}
+main .logoP span:nth-child(2) {
+  width: 25px;
+}
+@-webkit-keyframes logoSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  55% {
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes logoSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  55% {
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main section.sec1 {
+  position: relative;
+  width: 100%;
+  height: 620px;
+}
+main section.sec1 div.pic1 {
+  width: 68%;
+  height: 620px;
+  background: url(../img_sub4/img_mind01.jpg) center center/cover;
+}
+main section.sec1 div.ex1 {
+  width: 560px;
+  height: 235px;
+  background: #004438;
+  padding: 40px 35px 0;
+  position: absolute;
+  top: 340px;
+  left: 52%;
+}
+main section.sec1 div.ex1 p {
+  margin-top: 20px;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+}
+main section.sec2 {
+  position: relative;
+  max-width: 1180px;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.sec2 div.ex1 {
+  max-width: 620px;
+  background: white;
+  display: block;
+  text-align: center;
+  padding: 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  line-height: 200%;
+  color: black;
+}
+main section.sec2 div.ex1 h2 {
+  font-family: "Noto Serif KR", sans-serif;
+  margin-top: 3vw;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 130%;
+  font-weight: 100;
+}
+main section.sec2 div.ex1 p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.2px;
+  -webkit-text-decoration: none solid rgb(138, 177, 170);
+          text-decoration: none solid rgb(138, 177, 170);
+  text-align: start;
+  color: black;
+}
+main section.sec2 div.pic1 {
+  max-width: 560px;
+}
+main section.sec2 div.pic1 img {
+  width: 100%;
+}
+main section.sec3 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: white;
+}
+main section.sec3 div.container {
+  max-width: 1180px;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 10px 50px;
+  border-bottom: 1px solid #004438;
+}
+main section.sec3 div.container h2 {
+  width: 100%;
+  border-bottom: 2px solid #004438;
+  margin: 62px 0 30px 0;
+  padding: 50px 0 20px 0;
+  text-align: center;
+  font-family: "Libre Bodoni", serif;
+  font-weight: lighter;
+  font-size: 26px;
+  line-height: 30px;
+  color: #004438;
+}
+main section.sec3 div.container ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main section.sec3 div.container ul li {
+  float: left;
+  width: 23%;
+  padding-bottom: 25%;
+  margin: 20px 1% 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+main section.sec3 div.container ul li:hover div.green {
+  transform: translateX(87%) rotate(150deg);
+}
+main section.sec3 div.container ul li:hover div.ex {
+  opacity: 1;
+}
+main section.sec3 div.container ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main section.sec3 div.container ul li div.green {
+  width: 210%;
+  height: 190%;
+  background: #004438;
+  opacity: 0.7;
+  position: absolute;
+  transform: rotate(150deg);
+  top: -10%;
+  left: -240%;
+  transition: 0.4s;
+}
+main section.sec3 div.container ul li div.ex {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+main section.sec3 div.container ul li div.ex p {
+  font-size: 16px;
+  text-align: left;
+}
+main section.sec4 {
+  width: 100%;
+  height: 63px;
+}
+main section.sec4 div.contentbox {
+  max-width: 1180px;
+  margin: 70px auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #577E77;
+  padding: 0 20px;
+}
+main section.sec4 div.contentbox p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: start;
+  color: black;
+  position: relative;
+}
+main section.sec4 div.contentbox p:nth-child(1) {
+  margin-left: 35px;
+}
+main section.sec4 div.contentbox p:nth-child(1)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: -35px;
+  width: 20px;
+  height: 20px;
+  background: url("../img_sub4/ico_msg.png") left center no-repeat;
+  background-size: 20px 20px;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  main {
+    margin: 65px 0 100px 0;
+    width: 100%;
+  }
+  main .logoP {
+    display: block;
+    color: #e0e0e0;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: "Libre Bodoni", serif;
+  }
+  main .logoP span {
+    width: 32px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    transform: translateY(0%);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main .logoP span:nth-child(1) {
+    margin-right: 5px;
+  }
+  main .logoP span:nth-child(2) {
+    width: 25px;
+  }
+  @-webkit-keyframes logoSpan {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(-6%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes logoSpan {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(-6%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  main section.sec1 {
+    position: relative;
+    width: 100%;
+    height: 620px;
+  }
+  main section.sec1 div.pic1 {
+    width: 68%;
+    height: 740px;
+    background: url(../img_sub4/img_mind01.jpg) center center/cover;
+  }
+  main section.sec1 div.ex1 {
+    width: 580px;
+    height: 250px;
+    background: #004438;
+    padding: 40px 35px 0;
+    position: static;
+    position: absolute;
+    top: 400px;
+    left: initial;
+    right: 1%;
+  }
+  main section.sec1 div.ex1 p {
+    margin-top: 20px;
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+  }
+  main section.sec2 {
+    position: relative;
+    max-width: 1180px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main section.sec2 div.ex1 {
+    max-width: 620px;
+    background: white;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 200%;
+    color: black;
+  }
+  main section.sec2 div.ex1 h2 {
+    font-family: "Noto Serif KR", sans-serif;
+    margin-top: 3vw;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 130%;
+    font-weight: 100;
+  }
+  main section.sec2 div.ex1 p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    -webkit-text-decoration: none solid rgb(138, 177, 170);
+            text-decoration: none solid rgb(138, 177, 170);
+    text-align: start;
+    color: black;
+  }
+  main section.sec2 div.pic1 {
+    max-width: 560px;
+  }
+  main section.sec2 div.pic1 img {
+    width: 100%;
+  }
+}
+@media (min-width: 280px) and (max-width: 767px) {
+  main {
+    margin: 65px 0 100px 0;
+    width: 100%;
+  }
+  main .logoP {
+    display: block;
+    color: #e0e0e0;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-family: "Libre Bodoni", serif;
+  }
+  main .logoP span {
+    width: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    transform: translateY(0%);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main .logoP span:nth-child(2) {
+    width: 12px;
+  }
+  main section.sec1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  main section.sec1 div.pic1 {
+    width: 100%;
+    height: 210px;
+    background: url(../img_sub4/img_mind01.jpg) center center/cover;
+  }
+  main section.sec1 div.ex1 {
+    width: 80%;
+    height: 120px;
+    background: #004438;
+    padding: 10px 15px 0;
+    position: static;
+    position: absolute;
+    top: initial;
+    bottom: -50%;
+    left: initial;
+    right: 1%;
+  }
+  main section.sec1 div.ex1 img {
+    transform: scale(0.5);
+  }
+  main section.sec1 div.ex1 p {
+    margin-top: 0px;
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+  }
+  main section.sec2 {
+    position: relative;
+    max-width: 1180px;
+    margin: 200px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main section.sec2 div.ex1 {
+    max-width: 620px;
+    background: white;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+    line-height: 200%;
+    color: black;
+    margin-top: 30px;
+    order: 1;
+  }
+  main section.sec2 div.ex1 h2 {
+    font-family: "Noto Serif KR", sans-serif;
+    margin-top: 3vw;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 100;
+  }
+  main section.sec2 div.ex1 p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25.2px;
+    -webkit-text-decoration: none solid rgb(138, 177, 170);
+            text-decoration: none solid rgb(138, 177, 170);
+    text-align: start;
+    color: black;
+  }
+  main section.sec2 div.pic1 {
+    max-width: 620px;
+    order: 0;
+  }
+  main section.sec2 div.pic1 img {
+    width: 100%;
+    height: auto;
+  }
+  main section.sec3 {
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    background: white;
+  }
+  main section.sec3 div.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 10px 50px;
+    border-bottom: 1px solid #004438;
+  }
+  main section.sec3 div.container h2 {
+    width: 100%;
+    border-bottom: 2px solid #004438;
+    margin: 62px 0 30px 0;
+    padding: 50px 0 20px 0;
+    text-align: center;
+    font-family: "Libre Bodoni", serif;
+    font-weight: lighter;
+    font-size: 26px;
+    line-height: 30px;
+    color: #004438;
+  }
+  main section.sec3 div.container ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: auto;
+  }
+  main section.sec3 div.container ul li {
+    float: left;
+    width: 48%;
+    padding-bottom: 50%;
+    margin: 20px 1% 0;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  main section.sec3 div.container ul li:hover div.green {
+    transform: translateX(80%) rotate(150deg);
+  }
+  main section.sec3 div.container ul li:hover div.ex {
+    opacity: 1;
+  }
+  main section.sec3 div.container ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  main section.sec3 div.container ul li div.green {
+    width: 210%;
+    height: 190%;
+    background: #004438;
+    opacity: 0.7;
+    position: absolute;
+    transform: rotate(150deg);
+    top: -17%;
+    left: -240%;
+    transition: 0.4s;
+  }
+  main section.sec3 div.container ul li div.ex {
+    width: 100%;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px 10px;
+  }
+  main section.sec3 div.container ul li div.ex p {
+    font-size: 16px;
+    text-align: left;
+  }
+  main section.sec4 {
+    width: 98%;
+    margin: 0 auto;
+    height: 55px;
+  }
+  main section.sec4 div.contentbox {
+    max-width: 1180px;
+    margin: 30px 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #577E77;
+    padding: 40px 20px 15px;
+  }
+  main section.sec4 div.contentbox p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: start;
+    color: black;
+    position: relative;
+    margin: 0;
+  }
+  main section.sec4 div.contentbox p:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-20px);
+    width: 20px;
+    height: 20px;
+    background: url("../img_sub4/ico_msg.png") left center no-repeat;
+    background-size: 20px 20px;
+  }
+}/*# sourceMappingURL=sub4.css.map */

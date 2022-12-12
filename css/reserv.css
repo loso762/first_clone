@@ -1,0 +1,732 @@
+main {
+  margin: 65px 0 100px 0;
+  width: 100%;
+}
+main .logoP {
+  display: block;
+  color: #e0e0e0;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-family: "Libre Bodoni", serif;
+}
+main .logoP span {
+  width: 32px;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  transform: translateY(0%);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+main .logoP span:nth-child(9) {
+  width: 25px;
+}
+@-webkit-keyframes logoSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  55% {
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes logoSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  55% {
+    transform: translateY(-6%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main div.sec1 {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main div.sec1 .select {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+main div.sec1 .select p {
+  margin-top: 0;
+  color: #333;
+}
+main div.sec1 .select select {
+  -moz-text-align-last: center;
+       text-align-last: center;
+  margin: 50px 1% 60px;
+  position: relative;
+  width: 52%;
+  height: 40px;
+  border: solid #c4c4c4;
+  border-width: 0 0 1px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  z-index: 1;
+  background: transparent;
+}
+main div.sec1 .select input#reserv_num {
+  -moz-text-align-last: center;
+       text-align-last: center;
+  margin-bottom: 60px;
+  position: relative;
+  width: 52%;
+  height: 40px;
+  border: solid #c4c4c4;
+  border-width: 0 0 1px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  z-index: 1;
+  background: transparent;
+}
+main div.sec1 .select span {
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  color: #333;
+  line-height: 90%;
+}
+main div.sec1 .select input#reserv_num2 {
+  -moz-text-align-last: center;
+       text-align-last: center;
+  margin-bottom: 60px;
+  position: relative;
+  width: 52%;
+  height: 40px;
+  border: solid #c4c4c4;
+  border-width: 0 0 1px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  z-index: 1;
+  background: transparent;
+}
+main div.sec1 .calendar {
+  border: none;
+  border: none;
+  box-shadow: 0 10px 23px rgba(174, 174, 174, 0.2);
+  width: auto;
+  padding: 35px;
+}
+main div.sec1 .calendar #calendar {
+  width: 355px;
+  height: 395px;
+  margin: 0 auto;
+}
+main div.sec1 .time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px 10px;
+}
+main div.sec1 .time p {
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+main div.sec1 .time label {
+  width: 25%;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  font-size: 13px;
+}
+main div.sec1 .time label input {
+  transform: translateY(1.5px) translateX(-6px);
+}
+main div.sec1 .explain {
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main div.sec1 .explain p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 21.6px;
+  padding-left: 30px;
+  position: relative;
+}
+main div.sec1 .explain p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 6px;
+  left: 8px;
+  background: url("../img_sub4/ico_check.png") left top no-repeat;
+  background-size: 11px;
+}
+main div.sec1 .next {
+  width: 100%;
+  padding-top: 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main div.sec1 .next button {
+  background: transparent;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  color: #004438;
+  font-family: "Libre Bodoni", serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100px;
+  letter-spacing: 10px;
+  padding: 10px 26px 10px 34px;
+  cursor: pointer;
+}
+main div.sec1 .next button p {
+  position: absolute;
+  top: -40%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Libre Bodoni", serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100px;
+  letter-spacing: 10px;
+  padding: 10px 26px 10px 34px;
+  z-index: -1;
+  transition: 0.2s;
+}
+main div.sec1 .next button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  bottom: -99%;
+  left: 0;
+  background: #004438;
+  transition: 0.3s;
+}
+main div.sec1 .next button:hover {
+  color: white;
+}
+main div.sec1 .next button:hover::before {
+  transform: translateY(-89%);
+}
+main div.sec1 .next button:hover p {
+  z-index: 2;
+}
+main div.sec1 .next p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  line-height: 21.6px;
+  text-align: center;
+  color: #9B9B9B;
+  position: relative;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    margin: 65px 0 100px 0;
+    width: 100%;
+  }
+  main .logoP {
+    display: block;
+    color: #e0e0e0;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: "Libre Bodoni", serif;
+  }
+  main .logoP span {
+    width: 32px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    transform: translateY(0%);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main .logoP span:nth-child(9) {
+    width: 25px;
+  }
+  @-webkit-keyframes logoSpan {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(-6%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes logoSpan {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(-6%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  main div.sec1 {
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main div.sec1 .select {
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+  main div.sec1 .select p {
+    margin-top: 0;
+    color: #333;
+  }
+  main div.sec1 .select select {
+    -moz-text-align-last: center;
+         text-align-last: center;
+    margin: 50px 1% 60px;
+    position: relative;
+    width: 52%;
+    height: 40px;
+    border: solid #c4c4c4;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    z-index: 1;
+    background: transparent;
+  }
+  main div.sec1 .select input#reserv_num {
+    -moz-text-align-last: center;
+         text-align-last: center;
+    margin-bottom: 60px;
+    position: relative;
+    width: 52%;
+    height: 40px;
+    border: solid #c4c4c4;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    z-index: 1;
+    background: transparent;
+  }
+  main div.sec1 .select span {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+    color: #333;
+    line-height: 90%;
+  }
+  main div.sec1 .select input#reserv_num2 {
+    -moz-text-align-last: center;
+         text-align-last: center;
+    margin-bottom: 60px;
+    position: relative;
+    width: 52%;
+    height: 40px;
+    border: solid #c4c4c4;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    z-index: 1;
+    background: transparent;
+  }
+  main div.sec1 .calendar {
+    border: none;
+    border: none;
+    box-shadow: 0 10px 23px rgba(174, 174, 174, 0.2);
+    width: auto;
+    padding: 5px;
+  }
+  main div.sec1 .calendar #calendar {
+    width: 355px;
+    height: 395px;
+    margin: 0 auto;
+  }
+  main div.sec1 .time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+  }
+  main div.sec1 .time p {
+    width: 100%;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  main div.sec1 .time label {
+    width: 25%;
+    margin-bottom: 10px;
+    padding-left: 3px;
+    font-size: 11px;
+  }
+  main div.sec1 .time label input {
+    transform: translateY(1.5px) translateX(-6px);
+  }
+  main div.sec1 .explain {
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  main div.sec1 .explain p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21.6px;
+    padding-left: 20px;
+    position: relative;
+  }
+  main div.sec1 .explain p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 0;
+    background: url("../img_sub4/ico_check.png") left top no-repeat;
+    background-size: 11px;
+  }
+  main div.sec1 .next {
+    width: 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main div.sec1 .next button {
+    background: transparent;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    color: #004438;
+    font-family: "Libre Bodoni", serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 10px;
+    padding: 10px 26px 10px 34px;
+    cursor: pointer;
+  }
+  main div.sec1 .next button p {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Libre Bodoni", serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 10px;
+    padding: 10px 26px 10px 34px;
+    z-index: -1;
+    transition: 0.2s;
+  }
+  main div.sec1 .next button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    bottom: -99%;
+    left: 0;
+    background: #004438;
+    transition: 0.3s;
+  }
+  main div.sec1 .next button:hover {
+    color: white;
+  }
+  main div.sec1 .next button:hover::before {
+    transform: translateY(-89%);
+  }
+  main div.sec1 .next button:hover p {
+    z-index: 2;
+  }
+  main div.sec1 .next p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    line-height: 21.6px;
+    text-align: center;
+    color: #9B9B9B;
+    position: relative;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 280px) and (max-width: 480px) {
+  main {
+    margin: 65px 0 100px 0;
+    width: 100%;
+  }
+  main .logoP {
+    display: block;
+    color: #e0e0e0;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-family: "Libre Bodoni", serif;
+  }
+  main .logoP span {
+    width: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    transform: translateY(0%);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  main .logoP span:nth-child(9) {
+    width: 12px;
+  }
+  main div.sec1 {
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main div.sec1 .select {
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+  }
+  main div.sec1 .select p {
+    margin-top: 0;
+    color: #333;
+  }
+  main div.sec1 .select select {
+    -moz-text-align-last: center;
+         text-align-last: center;
+    margin: 50px 1% 60px;
+    position: relative;
+    width: 52%;
+    height: 40px;
+    border: solid #c4c4c4;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    z-index: 1;
+    background: transparent;
+  }
+  main div.sec1 .select input#reserv_num {
+    -moz-text-align-last: center;
+         text-align-last: center;
+    margin-bottom: 60px;
+    position: relative;
+    width: 52%;
+    height: 40px;
+    border: solid #c4c4c4;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    z-index: 1;
+    background: transparent;
+  }
+  main div.sec1 .select span {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+    color: #333;
+    line-height: 90%;
+  }
+  main div.sec1 .select input#reserv_num2 {
+    -moz-text-align-last: center;
+         text-align-last: center;
+    margin-bottom: 60px;
+    position: relative;
+    width: 52%;
+    height: 40px;
+    border: solid #c4c4c4;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    z-index: 1;
+    background: transparent;
+  }
+  main div.sec1 .time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+  }
+  main div.sec1 .time p {
+    width: 100%;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  main div.sec1 .time label {
+    width: 25%;
+    margin-bottom: 10px;
+    padding-left: 3px;
+    font-size: 11px;
+  }
+  main div.sec1 .time label input {
+    transform: translateY(1.5px) translateX(-6px);
+  }
+  main div.sec1 .explain {
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  main div.sec1 .explain p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21.6px;
+    padding-left: 20px;
+    position: relative;
+  }
+  main div.sec1 .explain p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 0;
+    background: url("../img_sub4/ico_check.png") left top no-repeat;
+    background-size: 11px;
+  }
+  main div.sec1 .next {
+    width: 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main div.sec1 .next button {
+    background: transparent;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    color: #004438;
+    font-family: "Libre Bodoni", serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 10px;
+    padding: 10px 26px 10px 34px;
+    cursor: pointer;
+  }
+  main div.sec1 .next button p {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Libre Bodoni", serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 10px;
+    padding: 10px 26px 10px 34px;
+    z-index: -1;
+    transition: 0.2s;
+  }
+  main div.sec1 .next button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    bottom: -99%;
+    left: 0;
+    background: #004438;
+    transition: 0.3s;
+  }
+  main div.sec1 .next button:hover {
+    color: white;
+  }
+  main div.sec1 .next button:hover::before {
+    transform: translateY(-89%);
+  }
+  main div.sec1 .next button:hover p {
+    z-index: 2;
+  }
+  main div.sec1 .next p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    line-height: 21.6px;
+    text-align: center;
+    color: #9B9B9B;
+    position: relative;
+    padding-top: 30px;
+  }
+}/*# sourceMappingURL=reserv.css.map */

@@ -1,0 +1,754 @@
+@charset "UTF-8";
+a:visited, a:link {
+  color: white;
+}
+
+section.menu {
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  background: #004438;
+  display: flex;
+  transform: translateY(-110%);
+  transition: 600ms;
+  overflow: hidden;
+  z-index: 999;
+}
+section.menu div.bg1 {
+  background: url(../img/menu.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  transition: 900ms;
+  transform: translateX(-4%);
+}
+section.menu div.contents {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+section.menu div.contents button.esc {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 11px;
+  right: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+section.menu div.contents button.esc span {
+  display: block;
+  width: 90%;
+  height: 3px;
+  background: white;
+}
+section.menu div.contents button.esc span:nth-child(1) {
+  transform: translateY(3px) rotate(45deg) scale(1) translateX(-70px);
+  transition: 0.5s;
+}
+section.menu div.contents button.esc span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg) scale(1) translateX(70px);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+section.menu div.contents div.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 115px 100px;
+}
+section.menu div.contents div.menu div.list {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+section.menu div.contents div.menu div.list div.a {
+  display: block;
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.9vw;
+  font-weight: 200;
+  line-height: 145%;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section.menu div.contents div.menu div.list div.a:hover p::after {
+  transition: 0.5s;
+  transform: translateX(0);
+}
+section.menu div.contents div.menu div.list div.a a.h2 {
+  margin: 0;
+  padding-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+section.menu div.contents div.menu div.list div.a a.h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: 0.5s;
+  transform: translateX(-101%);
+}
+section.menu div.contents div.menu div.list div.a a.h2:hover::after {
+  transform: translateX(0);
+}
+section.menu div.contents div.menu div.list div.a a.h3 {
+  display: block;
+  padding: 0 15px;
+  position: relative;
+  height: 1vw;
+  color: #8AB1AA;
+  line-height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+}
+section.menu div.contents div.menu div.list div.a a.h3:hover {
+  color: white;
+}
+section.menu div.contents div.menu div.list div.a a#use {
+  border-right: solid white 1px;
+}
+section.menu div.contents div.menu div.list span {
+  color: #8AB1AA;
+  line-height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+}
+section.menu div.contents div.foot {
+  width: 100%;
+  padding: 0 100px;
+  position: absolute;
+  bottom: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+section.menu div.contents div.foot div.search {
+  width: 11vw;
+  min-width: 130px;
+  height: 38px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: row;
+  opacity: 0.8;
+  position: relative;
+}
+section.menu div.contents div.foot div.search input.searchText {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 70%;
+}
+section.menu div.contents div.foot div.search input.searchText::-moz-placeholder {
+  color: white;
+  opacity: 0.8;
+  font-size: 13px;
+}
+section.menu div.contents div.foot div.search input.searchText:-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+  font-size: 13px;
+}
+section.menu div.contents div.foot div.search input.searchText::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-size: 13px;
+}
+section.menu div.contents div.foot div.search input.searchText:focus {
+  outline: none; /* 아웃라인 지우기 */
+  color: white;
+}
+section.menu div.contents div.foot div.search button.searchButton {
+  background: none;
+  border: none;
+  width: 38px;
+  height: 38px;
+  transform: scale(0.5);
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+}
+section.menu div.contents div.foot div.backlogo {
+  width: 10vw;
+  min-width: 160px;
+}
+section.menu div.contents div.foot div.backlogo img {
+  width: 100%;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  section.menu div.bg1 {
+    width: 40%;
+    transform: translateX(-3%);
+  }
+  section.menu div.contents {
+    width: 60%;
+  }
+  section.menu div.contents div.menu {
+    padding: 100px 50px;
+  }
+  section.menu div.contents div.menu div.list div.a {
+    font-size: 24px;
+  }
+  section.menu div.contents div.menu div.list div.a a.h3 {
+    height: 1.5vw;
+    font-size: 15px;
+    margin: 0;
+  }
+  section.menu div.contents div.menu div.list span {
+    font-size: 15px;
+  }
+  section.menu div.contents div.foot {
+    padding: 0 60px;
+  }
+  section.menu div.contents div.foot div.backlogo {
+    width: 15vw;
+  }
+  section.menu div.contents div.foot div.backlogo img {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  section.menu {
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #004438;
+    display: flex;
+    transform: translateY(-110%);
+    transition: 600ms;
+    overflow: hidden;
+    z-index: 999;
+  }
+  section.menu div.bg1 {
+    display: none;
+  }
+  section.menu div.contents {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  section.menu div.contents button.esc {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 8px;
+    right: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  section.menu div.contents div.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+  }
+  section.menu div.contents div.menu div.list {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.menu div.contents div.menu div.list div.a {
+    display: block;
+    font-family: "Noto Serif KR", serif;
+    font-size: 5vw;
+    font-weight: 200;
+    line-height: 145%;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  section.menu div.contents div.menu div.list div.a:hover p::after {
+    transition: 0.5s;
+    transform: translateX(0);
+  }
+  section.menu div.contents div.menu div.list div.a a.h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  section.menu div.contents div.menu div.list div.a a.h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: translateX(-101%);
+  }
+  section.menu div.contents div.menu div.list div.a a.h2:hover::after {
+    transition: 0.5s;
+    transform: translateX(0);
+  }
+  section.menu div.contents div.menu div.list div.a a.h3 {
+    display: block;
+    padding: 0 15px;
+    position: relative;
+    height: 2.5vw;
+    color: #8AB1AA;
+    line-height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.2vw;
+  }
+  section.menu div.contents div.menu div.list div.a a.h3:hover {
+    color: white;
+  }
+  section.menu div.contents div.menu div.list div.a a#use {
+    border-right: solid white 1px;
+  }
+  section.menu div.contents div.menu div.list span {
+    color: #8AB1AA;
+    line-height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.2vw;
+    margin-top: 1vw;
+  }
+  section.menu div.contents div.foot {
+    width: 100%;
+    padding: 0 50px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  section.menu div.contents div.foot div.search {
+    width: 30vw;
+    height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    position: relative;
+  }
+  section.menu div.contents div.foot div.search input.searchText {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 70%;
+    min-width: 120px;
+  }
+  section.menu div.contents div.foot div.search input.searchText::-moz-placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText:-ms-input-placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText:focus {
+    outline: none; /* 아웃라인 지우기 */
+    color: white;
+  }
+  section.menu div.contents div.foot div.search button.searchButton {
+    background: none;
+    border: none;
+    width: 38px;
+    height: 38px;
+    transform: scale(0.5);
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+  }
+  section.menu div.contents div.foot div.backlogo {
+    width: 25vw;
+    min-width: 100px;
+  }
+  section.menu div.contents div.foot div.backlogo img {
+    width: 100%;
+  }
+}
+@media (min-width: 280px) and (max-width: 480px) {
+  section.menu {
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #004438;
+    display: flex;
+    transform: translateY(-110%);
+    transition: 600ms;
+    overflow: hidden;
+    z-index: 999;
+  }
+  section.menu div.bg1 {
+    display: none;
+  }
+  section.menu div.contents {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  section.menu div.contents button.esc {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 7px;
+    right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  section.menu div.contents div.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 50px;
+  }
+  section.menu div.contents div.menu div.list {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.menu div.contents div.menu div.list div.a {
+    display: block;
+    font-family: "Noto Serif KR", serif;
+    font-size: 5vw;
+    font-weight: 200;
+    line-height: 145%;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  section.menu div.contents div.menu div.list div.a:hover p::after {
+    transition: 0.5s;
+    transform: translateX(0);
+  }
+  section.menu div.contents div.menu div.list div.a a.h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  section.menu div.contents div.menu div.list div.a a.h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: translateX(-101%);
+  }
+  section.menu div.contents div.menu div.list div.a a.h2:hover::after {
+    transition: 0.5s;
+    transform: translateX(0);
+  }
+  section.menu div.contents div.menu div.list div.a a.h3 {
+    display: block;
+    padding: 0 15px;
+    position: relative;
+    height: 2.5vw;
+    color: #8AB1AA;
+    line-height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.2vw;
+  }
+  section.menu div.contents div.menu div.list div.a a.h3:hover {
+    color: white;
+  }
+  section.menu div.contents div.menu div.list div.a a#use {
+    border-right: solid white 1px;
+  }
+  section.menu div.contents div.menu div.list span {
+    color: #8AB1AA;
+    line-height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.2vw;
+    margin-top: 1vw;
+  }
+  section.menu div.contents div.foot {
+    width: 100%;
+    padding: 0 30px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  section.menu div.contents div.foot div.search {
+    width: 24vw;
+    height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    position: relative;
+  }
+  section.menu div.contents div.foot div.search input.searchText {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 70%;
+    min-width: 110px;
+  }
+  section.menu div.contents div.foot div.search input.searchText::-moz-placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText:-ms-input-placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText:focus {
+    outline: none; /* 아웃라인 지우기 */
+    color: white;
+  }
+  section.menu div.contents div.foot div.search button.searchButton {
+    background: none;
+    border: none;
+    width: 38px;
+    height: 38px;
+    transform: scale(0.5);
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+  }
+  section.menu div.contents div.foot div.backlogo {
+    width: 25vw;
+    min-width: 100px;
+  }
+  section.menu div.contents div.foot div.backlogo img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 280px) {
+  section.menu {
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #004438;
+    display: flex;
+    transform: translateY(-110%);
+    transition: 600ms;
+    overflow: hidden;
+    z-index: 999;
+  }
+  section.menu div.bg1 {
+    display: none;
+  }
+  section.menu div.contents {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  section.menu div.contents button.esc {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 13px;
+    right: 11px;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  section.menu div.contents button.esc span {
+    display: block;
+    width: 90%;
+    height: 3px;
+    background: white;
+  }
+  section.menu div.contents button.esc span:nth-child(1) {
+    transform: translateY(3px) rotate(45deg) scale(1);
+    transition: 0.5s;
+  }
+  section.menu div.contents button.esc span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg) scale(1);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+  }
+  section.menu div.contents div.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+  }
+  section.menu div.contents div.menu div.list {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.menu div.contents div.menu div.list div.a {
+    display: block;
+    font-family: "Noto Serif KR", serif;
+    font-size: 5vw;
+    font-weight: 200;
+    line-height: 145%;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  section.menu div.contents div.menu div.list div.a:hover p::after {
+    transition: 0.5s;
+    transform: translateX(0);
+  }
+  section.menu div.contents div.menu div.list div.a a.h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  section.menu div.contents div.menu div.list div.a a.h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: translateX(-101%);
+  }
+  section.menu div.contents div.menu div.list div.a a.h2:hover::after {
+    transition: 0.5s;
+    transform: translateX(0);
+  }
+  section.menu div.contents div.menu div.list div.a a.h3 {
+    display: block;
+    padding: 0 15px;
+    position: relative;
+    height: 2.5vw;
+    color: #8AB1AA;
+    line-height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.2vw;
+  }
+  section.menu div.contents div.menu div.list div.a a.h3:hover {
+    color: white;
+  }
+  section.menu div.contents div.menu div.list div.a a#use {
+    border-right: solid white 1px;
+  }
+  section.menu div.contents div.menu div.list span {
+    color: #8AB1AA;
+    line-height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 3.2vw;
+    margin-top: 1vw;
+  }
+  section.menu div.contents div.foot {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  section.menu div.contents div.foot div.search {
+    width: 22vw;
+    height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    position: relative;
+  }
+  section.menu div.contents div.foot div.search input.searchText {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 70%;
+    min-width: 100px;
+  }
+  section.menu div.contents div.foot div.search input.searchText::-moz-placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText:-ms-input-placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  section.menu div.contents div.foot div.search input.searchText:focus {
+    outline: none; /* 아웃라인 지우기 */
+    color: white;
+  }
+  section.menu div.contents div.foot div.search button.searchButton {
+    background: none;
+    border: none;
+    width: 38px;
+    height: 38px;
+    transform: scale(0.5);
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+  }
+  section.menu div.contents div.foot div.backlogo {
+    width: 25vw;
+    min-width: 100px;
+  }
+  section.menu div.contents div.foot div.backlogo img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=menu.css.map */
