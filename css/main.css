@@ -937,21 +937,23 @@ div.swiper div.swiper-scrollbar div.swiper-scrollbar-drag {
   .pop .pop2 {
     width: 280px;
   }
-  .is_off {
+  a .is_off {
     display: none;
   }
   header {
     padding: 0 30px 0 0;
   }
   header h1#logo {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
   header ul {
-    width: 150px;
+    width: 180px;
+    height: 70px;
+    transform: scale(0.7) translateX(20px);
   }
   header ul li {
-    transform: scale(0.7);
-    padding: 16px 0;
+    padding: 15px 0;
+    padding-left: 5px;
   }
   header ul .open_menu {
     padding: 18px 0 28px 10px;
