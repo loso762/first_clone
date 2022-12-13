@@ -22,14 +22,9 @@ acc.forEach(function(button,key){
     button.addEventListener("click", function () {
         if(i!=key){
             acc[i].classList.remove("active");
-            panel[i].style.maxHeight = null;
         }
         button.classList.toggle("active");
-        if (panel[key].style.maxHeight) {
-            panel[key].style.maxHeight = null;
-        } else {
-            panel[key].style.maxHeight = panel[key].scrollHeight + "px";
-        }
+        $(".panel").eq(key).toggle('slow');
         i=key;
     });
 })

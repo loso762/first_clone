@@ -4,8 +4,16 @@ $('body').append('<footer>');
 $('header').load("./inc.html header .headcon",head);
 $('footer').load("./inc.html footer>div");
 
+let idx = localStorage.idx || 0;
 
 function head(){
+    $('.list').eq(idx).find('.a>a').addClass('active');
+    
+    $('.list').click(function(){
+        let idx = $(this).index();
+        localStorage.idx = idx;
+    })
+
     const menu = document.querySelector ('.menu');
     const bg1 = document.querySelector ('.bg1');
     const btnesc = document.querySelector ('.esc');

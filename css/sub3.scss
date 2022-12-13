@@ -683,6 +683,7 @@ main{
                     transition: 0.4s;
                     position: relative;
                     padding-left: 50px;
+                    border-bottom: 1px solid #004438;
                 }
                 
                 .active, .accordion:hover {
@@ -716,10 +717,9 @@ main{
                 .panel {
                     padding: 0 16px;
                     background-color: #ffffff;
-                    max-height: 0;
                     overflow: hidden;
-                    transition: max-height 0.2s ease-out;
-                    border-bottom: 1px solid #004438; 
+                    border-bottom: 1px solid #004438;
+                    display: none;
                     p{
                         font-size: 14px;
                         padding: 20px 0;

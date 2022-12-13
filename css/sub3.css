@@ -658,6 +658,7 @@ main section.qna div.tab_menu div.container .accordion {
   transition: 0.4s;
   position: relative;
   padding-left: 50px;
+  border-bottom: 1px solid #004438;
 }
 main section.qna div.tab_menu div.container .active, main section.qna div.tab_menu div.container .accordion:hover {
   font-weight: bold;
@@ -687,10 +688,9 @@ main section.qna div.tab_menu div.container .active {
 main section.qna div.tab_menu div.container .panel {
   padding: 0 16px;
   background-color: #ffffff;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
   border-bottom: 1px solid #004438;
+  display: none;
 }
 main section.qna div.tab_menu div.container .panel p {
   font-size: 14px;
