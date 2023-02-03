@@ -265,6 +265,7 @@ div.swiper div.swiper-wrapper {
 }
 div.swiper div.swiper-wrapper div.s1 {
   background: #004438;
+  display: flex;
 }
 div.swiper div.swiper-wrapper div.s1 div.bg1 {
   width: 50%;
@@ -320,7 +321,7 @@ div.swiper div.swiper-wrapper div.s1 div.ex1 div.content1 p.a1::after {
 div.swiper div.swiper-wrapper div.s1 div.ex1 div.content1 p.a2 {
   margin: 80px 0 0 0;
   font-family: "Noto Serif KR", serif;
-  font-size: 3.75vw;
+  font-size: 3.4vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -352,6 +353,7 @@ div.swiper div.swiper-wrapper div.s1 div.ex1 a.detailView:hover p {
   color: #004438;
 }
 div.swiper div.swiper-wrapper div.s2 {
+  display: flex;
   background: rgb(248, 232, 193);
 }
 div.swiper div.swiper-wrapper div.s2 div.ex1 {
@@ -423,6 +425,7 @@ div.swiper div.swiper-wrapper div.s2 div.bg1 {
   background-repeat: no-repeat;
 }
 div.swiper div.swiper-wrapper div.s3 {
+  display: flex;
   background: rgb(149, 150, 106);
 }
 div.swiper div.swiper-wrapper div.s3 div.bg1 {
@@ -492,6 +495,7 @@ div.swiper div.swiper-wrapper div.s3 div.ex1 a.detailView:hover p {
   color: rgb(149, 150, 106);
 }
 div.swiper div.swiper-wrapper div.s4 {
+  display: flex;
   background: #94765e;
 }
 div.swiper div.swiper-wrapper div.s4 div.bg1 {
@@ -554,6 +558,7 @@ div.swiper div.swiper-wrapper div.s4 div.ex1 p.guide3 {
   bottom: 12vw;
 }
 div.swiper div.swiper-wrapper div.s5 {
+  display: flex;
   background: #1b284c;
 }
 div.swiper div.swiper-wrapper div.s5 div.bg1 {
