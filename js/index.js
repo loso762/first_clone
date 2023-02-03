@@ -109,6 +109,7 @@ function head(){
             spaceBetween: 0,
             effect: 'fade',
             mousewheel: true,
+            autoplay: true,
             scrollbar: {
                 el: ".swiper-scrollbar"
             },     
